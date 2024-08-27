@@ -6,66 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Institute Management system </title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <style>
+        .nav-hidden {
+            display: none;
+        }
+        .nav-visible {
+            display: block;
+        }
+    </style>
+
+<script>
+    // JavaScript to handle hover effect
+    const trigger = document.getElementById('trigger');
+    const navBar = document.getElementById('navBar');
+
+    trigger.addEventListener('mouseover', () => {
+        navBar.classList.remove('nav-hidden');
+        navBar.classList.add('nav-visible');
+    });
+
+    trigger.addEventListener('mouseleave', () => {
+        navBar.classList.remove('nav-visible');
+        navBar.classList.add('nav-hidden');
+    });
+
+    navBar.addEventListener('mouseover', () => {
+        navBar.classList.remove('nav-hidden');
+        navBar.classList.add('nav-visible');
+    });
+
+    navBar.addEventListener('mouseleave', () => {
+        navBar.classList.remove('nav-visible');
+        navBar.classList.add('nav-hidden');
+    });
+</script> -->
+
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <nav class="px-48 py-4 bg-purple-900 text-white flex justify-between">
-                <img src="imslogobrown.jpg" class="w-20 h-8 rounded" alt="">
-                <ul class="flex">
-                    <li class="mx-4 cursor-pointer">Home</li>
-                    <li class="mx-4 cursor-pointer">Features</li>
-                    <li class="mx-4 cursor-pointer">Demo</li>
-                    <li class="mx-4 cursor-pointer">Pricing</li>
-                    <li class="mx-4 cursor-pointer">Contact</li>
-                </ul>
-            </nav>
-            <main>
-                <div class="main bg-purple-800 h-[rem50] py-32 flex justify-between">
+    <body class="relative">
 
-                    <div class="text-4xl mx-52 text-white font-bold">
-                        Ranked #1 <br>
-                        easy to use<br>
-                        complete<br>
-                        all-in-one<br>
-                        school<br>management<br>system.
+  <section>
+    <nav id="navBar" class="fixed top-0 left-0 w-full px-4 py-4 bg-purple-900 text-white flex flex-wrap justify-between items-center z-50 nav-hidden">
+        <img src="imslogobrown.jpg" class="w-20 h-8 rounded" alt="">
+        <ul class="flex flex-wrap space-x-4 mt-2 md:mt-0">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Features</li>
+            <li class="cursor-pointer">Demo</li>
+            <li class="cursor-pointer">Pricing</li>
+            <li class="cursor-pointer">Contact</li>
+        </ul>
+    </nav>
+
+  
+                <main>
+                    <div class="bg-purple-800 py-16 flex flex-col md:flex-row justify-between items-center md:py-32">
+                        <div
+                            class="text-2xl md:text-4xl mx-4 md:mx-12 text-white font-bold text-center md:text-left px-10">
+                            Ranked #1 <br>
+                            easy to use<br>
+                            complete<br>
+                            all-in-one<br>
+                            school<br>
+                            management<br>
+                            system.
+                        </div>
+                        <div class="overflow-hidden w-full px-10 md:w-auto mt-4 md:mt-0">
+                            <marquee behavior="scroll" direction="up">
+                                <img src="demo.jpg" class="w-full h-auto md:w-[45rem] md:h-[20rem] rounded" alt="">
+                            </marquee>
+                        </div>
                     </div>
-                    <marquee behavior="scroll" direction="up">
-                        <img src="demo.jpg" class="h-[20rem] w-[45rem] rounded justify-end pr-10" alt="">
-                    </marquee>
+                </main>
+            </div>
+    </section>
+    
+
+
+        <section>
+            <div class="main bg-white h-auto py-10 flex flex-col lg:flex-row justify-between items-center">
+                <div class="text-3xl lg:mx-52 text-center lg:text-left text-indigo-800 font-bold px-4 lg:px-0">
+                    FREE Mobile <span class="text-rose-400">Application</span><br>For Parents, Students<br>& School
+                    Staff
+                    <p class="text-xs text-indigo-600 pt-5 lg:pt-10 leading-relaxed">
+                        Download and install our free mobile application to stay up to date. Our single mobile
+                        application is for every registered user like Admin, Teacher, Accountant, Management staff,
+                        Parents, and students.
+                    </p>
+
+                    <button
+                        class="bg-black text-white text-sm rounded-xl px-4 py-3 mt-10 lg:mt-20 inline-flex items-center">
+                        <img src="logo.png" alt="Google Play Logo" class="h-7 w-7 mr-2">
+                        <span>ANDROID APP ON<br>Google Play</span>
+                    </button>
+
+                    <button class="bg-black text-white text-sm rounded-xl px-4 py-3 mt-10 inline-flex items-center">
+                        <img src="apple(1).png" alt="Apple Logo" class="h-7 w-7 mr-2">
+                        <span>Download on the<br>App Store</span>
+                    </button>
                 </div>
 
-            </main>
-
-        </div>
-        <div class="main bg-white-800 h-[rem50] py-10 flex justify-between">
-
-            <div class="text-3xl mx-52 text-indigo-800 font-bold">
-                FREE Mobile <span class="text-rose-400">Application</span><br>For Parents, Students<br>& School Staff
-                <p class="text-xs text-indigo-600 pt-10" style="line-height: 2.1;">Download and install our free mobile
-                    application to stay up to date. Our single mobile application is for every registered user like
-                    Admin, Teacher, Accountant, Management staff, Parents, and students.</p>
-
-                <button class="bg-black text-white text-sm rounded-xl px-2 py-2 mt-20 inline-flex items-center">
-                    <img src="logo.png" alt="Apple Logo" class="h-7 w-7 mr-2">
-                    <span>ANDROID APP ON<br>Google Play</span>
-                </button>
-
-
-                <button class="bg-black text-white text-sm rounded-xl px-2 py-2 mt-14 inline-flex items-center">
-                    <img src="apple(1).png" alt="Apple Logo" class="h-7 w-7 mr-2">
-                    <span>Download on the<br>App Store</span>
-                </button>
-
+                <div class="flex justify-center lg:justify-end w-full lg:w-auto mt-10 lg:mt-0">
+                    <marquee behavior="scroll" direction="up" class="w-full lg:w-auto">
+                        <img src="mobile.png" class="h-[15rem] lg:h-[20rem] w-[20rem] lg:w-[45rem] rounded mx-auto"
+                            alt="">
+                    </marquee>
+                </div>
             </div>
+        </section>
 
-
-            <marquee behavior="scroll" direction="up">
-                <img src="mobile.png" class="h-[20rem] w-[45rem] rounded justify-end pr-28" alt="">
-            </marquee>
-
-        </div>
 
         <section class="main bg-purple-50 h-[rem50] py-10 flex justify-center items-center">
             <div class="continer">
@@ -530,45 +584,34 @@
             </div>
         </section>
 
-        <section class="main bg-white h-[rem50] py-10 flex justify-center items-center">
-            <div class="continer">
-                <div class="block-title text-center justify-between flex p-5 space-x-5">
-                    <div class="bg-gradient-to-r from-cyan-200 to-cyan-300 py-8 px-4 rounded">
-                        <h1 class="text-center text-5xl font-bold text-white">1200+</h1>
+
+        <section class="main bg-white h-auto py-10 flex justify-center items-center">
+            <div class="container mx-auto px-4">
+                <div class="block-title text-center flex flex-wrap justify-center space-y-5 sm:space-y-0 sm:space-x-5">
+                    <div class="bg-gradient-to-r from-cyan-200 to-cyan-300 py-8 px-4 rounded w-full sm:w-auto">
+                        <h1 class="text-center text-3xl sm:text-5xl font-bold text-white">1200+</h1>
                         <p class="text-white text-xs font-sans">Reg. Schools</p>
                     </div>
-                    <div class="bg-gradient-to-r from-orange-700 to-orange-900 py-8 px-7 rounded">
-                        <h1 class="text-center text-5xl font-bold text-white">560+</h1>
+                    <div class="bg-gradient-to-r from-orange-700 to-orange-900 py-8 px-7 rounded w-full sm:w-auto">
+                        <h1 class="text-center text-3xl sm:text-5xl font-bold text-white">560+</h1>
                         <p class="text-white text-xs font-sans">International Users</p>
                     </div>
-                    <div class="bg-gradient-to-r from-purple-700 to-cyan-900 py-8 px-10 rounded">
-                        <h1 class="text-center text-5xl font-bold text-white">12+</h1>
+                    <div class="bg-gradient-to-r from-purple-700 to-cyan-900 py-8 px-10 rounded w-full sm:w-auto">
+                        <h1 class="text-center text-3xl sm:text-5xl font-bold text-white">12+</h1>
                         <p class="text-white text-xs font-sans">Nations</p>
                     </div>
-                    <!-- <div class="bg-gradient-to-r from-green-300 to-green-400 py-8 px-10 rounded shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <h1 class="text-center text-5xl font-bold text-white">3+</h1>
-                        <p class="text-white text-xs font-sans">Best Soft. Awards</p>
-                    </div> -->
-                    <div class="bg-gradient-to-r from-green-300 to-green-400 py-8 px-10 rounded shadow-lg hover:shadowPulse">
-                        <h1 class="text-center text-5xl font-bold text-white">3+</h1>
+                    <div
+                        class="bg-gradient-to-r from-green-300 to-green-400 py-8 px-10 rounded w-full sm:w-auto shadow-lg hover:shadowPulse">
+                        <h1 class="text-center text-3xl sm:text-5xl font-bold text-white">3+</h1>
                         <p class="text-white text-xs font-sans">Best Soft. Awards</p>
                     </div>
-                    
-                    
                 </div>
             </div>
         </section>
-        <!-- <section class="main bg-purple-700 h-[20rem] py-10 px-28 flex justify-center items-center w-full bg-[url('redblue.jpg')] bg-cover bg-center">
-            <div class="container ">
-                <div class="flex justify-end">
-                    <button
-                        class="w-48 h-20 bg-gradient-to-t from-orange-400 to-amber-600 rounded-full text-white text-xl flex items-center justify-center transition-shadow transform hover:scale-110 hover:from-orange-500 hover:to-amber-700 hover:shadow-lg hover:text-gray-900">
-                        TRY DEMO
-                    </button>
-                </div>
-            </div>
-        </section> -->
-        <section class="main bg-sky-600 h-[20rem] py-10 px-28 flex justify-center items-center w-full bg-cover bg-center relative">
+
+
+        <section
+            class="main bg-sky-600 h-[20rem] py-10 px-28 flex justify-center items-center w-full bg-cover bg-center relative">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0 bg-[url('png.png')] bg-cover bg-center opacity-70"></div>
             <!-- Content -->
@@ -581,9 +624,64 @@
                 </div>
             </div>
         </section>
-        
-        
-        
+
+
+        <section class="main bg-purple-50 py-10 flex justify-center items-center">
+            <div class="container max-w-7xl mx-auto px-4">
+                <div
+                    class="block-title text-center md:text-left flex flex-col md:flex-row justify-between p-5 space-y-8 md:space-y-0 md:space-x-5">
+                    <div class="py-8 px-4 rounded">
+                        <img src="imslogobrown.JPG" class="h-10 w-24 mx-auto md:mx-0" alt="">
+                        <p class="text-indigo-600 text-xs font-bold mt-3 text-center md:text-left"
+                            style="line-height: 2.1;">
+                            EasySchoolin EdTech helping engage businesses<br>
+                            their cliental, updating, informing, campaigning them<br>
+                            making it hassle free for use.
+                        </p>
+                    </div>
+
+                    <div class="py-8 px-4 rounded">
+                        <h1 class="text-indigo-800 font-bold text-center md:text-left">Explore</h1>
+                        <ul class="text-indigo-600 text-xs font-bold mt-3 text-center md:text-left"
+                            style="line-height: 2.1;">
+                            <li class="hover:cursor-pointer">Terms & conditions</li>
+                            <li class="hover:cursor-pointer">Privacy policy</li>
+                            <li class="hover:cursor-pointer">Refund policy</li>
+                            <li class="hover:cursor-pointer">School ERP</li>
+                        </ul>
+                    </div>
+
+                    <div class="py-8 px-4 rounded">
+                        <h1 class="text-indigo-800 font-bold text-center md:text-left">Contact</h1>
+                        <ul class="text-indigo-600 text-xs font-bold mt-3 text-center md:text-left"
+                            style="line-height: 2.1;">
+                            <li class="hover:cursor-pointer">+9464549704 (WhatsApp)</li>
+                            <li class="hover:cursor-pointer">hello@institutemanagementsystem.com</li>
+                            <li class="hover:cursor-pointer">Jail Road</li>
+                            <li class="hover:cursor-pointer">Gurdaspur, Punjab</li>
+                        </ul>
+                    </div>
+
+                    <div class="py-8 px-4 rounded">
+                        <h1 class="text-indigo-800 font-bold text-center md:text-left">Subscribe For Upcoming Offers
+                        </h1>
+                        <div
+                            class="bg-white h-24 w-full md:w-64 flex py-2 items-start justify-start px-2 mt-3 rounded-xl mx-auto md:mx-0">
+                            <ul class="text-indigo-600 text-xs" style="line-height: 3.5;">
+                                <li>Full Name</li>
+                                <li>Email Address</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-white w-full h-[2px] border-0">
+                <h6 class="text-center text-indigo-600 text-xs font-bold mt-5">© Copyright 2024 by companyname WhatsApp:
+                    +9464549704 - Email: hello@institutemanagementsystem.com</h6>
+            </div>
+        </section>
+
+
+
 
     </div>
 
